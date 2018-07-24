@@ -224,14 +224,16 @@ div.contents.row {
   font-family: "游ゴシック", "YuGothic";
   }
   div.content_post {
-    @include boxBase(20px 0 ,30px);
+    @include boxBase(90px 30px ,30px);
     position: relative;
-    height: 400px;
+    height: 250px;
     color: #fff;
     background-size: cover;
     background-position: center center;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba($black,0.2);
+    float: left;
+    width: 230px;
     &:after {
       content: '';
       position: absolute;
@@ -368,6 +370,17 @@ form {
       text-decoration: underline;
     }
   }
+}
+
+.description{
+  background-color: red;
+  width: 230px;
+  height: 50px;
+
+}
+
+.pagination {
+
 }
 
 footer {
