@@ -24,7 +24,8 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">Tsumamiyage</a></h1>
+        <h1 class="grid-6"><a href="/">つまみやげ</a></h1>
+
         <% if user_signed_in? %>  <!-- ログインしている時の表示 -->
           <div class="user_nav grid-6">
             <span><%= current_user.nickname %>
@@ -35,7 +36,6 @@
                 </li>
               </ul>
             </span>
-            <a class="post" href="/tweets/new">投稿する</a>
           </div>
         <% else %>  <!-- ログインしていない時の表示 -->
           <div class="user_nav grid-6">
